@@ -1,0 +1,19 @@
+{
+  "name": "test-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "npx ts-node src/index.ts",
+    "build": "npx tsc"
+  },
+  "keywords": [],
+  "author": "Thibaud LARIVIERE",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.11.9",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
