@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions: 
       contents: read
-      packages: write 
+      packages: write
     steps:
       - uses: actions/checkout@v2
       # Setup .npmrc file to publish to npm
@@ -16,6 +16,7 @@ jobs:
           node-version: '14.x'
           registry-url: 'https://npm.pkg.github.com'
           scope: '@kaz0u'
+      - run: cat .npmrc
       - run: npm install
       - run: npm publish
         env:
