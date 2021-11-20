@@ -16,7 +16,7 @@ jobs:
           node-version: '14.x'
           registry-url: 'https://npm.pkg.github.com'
           scope: '@kaz0u'
-      - run: echo "$NPM_CONFIG_USERCONFIG"
+      - run: echo "$NPM_CONFIG_USERCONFIG" && cat "$NPM_CONFIG_USERCONFIG"
       - run: npm install
       - run: npm publish
         env:

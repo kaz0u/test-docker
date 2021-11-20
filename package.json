@@ -1,8 +1,7 @@
 {
   "name": "@kaz0u/test-docker",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "",
-  "private": true,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
